@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Владимир Короткевич](https://up.htmlacademy.ru/htmlcss/35/user/2075375).
-* Наставник: `Неизвестно`.
+* Наставник: [Кенан Агаев](https://htmlacademy.ru/profile/kenakula).
 
 ---
 
