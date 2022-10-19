@@ -56,49 +56,63 @@
         </div>
       </header>
       <section class="hotels-filters">
-        <div class="infrastructure-and-housing-filters">
+        <div class="filter-selection">
           <form class="filters-pack" action="https://echo.htmlacademy.ru/" method="get">
-            <h2 class="filters-item">Инфраструктура:</h2>
-              <ul class="option-list"> <!--Возможно этот список тут лишний. Слишком усложнил.-->
-                <li class="option-item">
-                  <label class="option-item-pool">
-                    <input class="option-pool-choice" type="checkbox" name="pool" id="pool" checked>Бассейн
-                  </label>
-                </li>
-                <li class="option-item">
-                  <label class="option-item-parking">
-                    <input class="option-parking-choice" type="checkbox" name="parking" id="parking" checked>Парковка
-                  </label>
-                </li>
-                <li class="option-item">
-                  <label class="option-item-wifi">
-                    <input class="option-wifi-choice" type="checkbox" name="wifi" id="wifi">Wi-Fi
-                  </label>
-                </li>
-              </ul>
-            <h2 class="filters-item">Тип Жилья:</h2>
-              <label class="option-item-hotel">
-                <input class="option-hotel-choice" type="radio" name="housing-type" id="hotel" value="Гостиница" checked>Гостиница
-              </label>
-              <label class="option-item-motel">
-                <input class="option-motel-choice" type="radio" name="housing-type" id="motel" value="Мотель">Мотель
-              </label>
-              <label class="option-item-apartment">
-                <input class="option-apartment-choice" type="radio" name="housing-type" id="apartment" value="Апартаменты">Апартаменты
-              </label>
-            <h2 class="filters-item">Стоимость, ₽:</h2>
-              <input class="price-field" type="number" name="from" id="from" value="0"> <!--Как написать в поле слово "от"?-->
-              <input class="price-field" type="number" name="to" id="to" value="9000"> <!--Аналогично, только "до"?-->
-              <div class="scale">
-                <div class="big-scale">
-                  <div class="small-scale">
-                    <div class="cube-left"></div>
-                    <div class="cube-right"></div>
+            <div class="filter-infrastrucruture">
+              <h2 class="filters-item">Инфраструктура:</h2>
+                <ul class="option-list"> <!--Возможно этот список тут лишний. Слишком усложнил.-->
+                  <li class="option-item">
+                    <label class="option-item-pool">
+                      <input class="option-pool-choice" type="checkbox" name="pool" id="pool" checked>Бассейн
+                    </label>
+                  </li>
+                  <li class="option-item">
+                    <label class="option-item-parking">
+                      <input class="option-parking-choice" type="checkbox" name="parking" id="parking" checked>Парковка
+                    </label>
+                  </li>
+                  <li class="option-item">
+                    <label class="option-item-wifi">
+                      <input class="option-wifi-choice" type="checkbox" name="wifi" id="wifi">Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+            </div>
+            <div class="filter-typehousing">
+              <h2 class="filters-item">Тип Жилья:</h2>
+                <label class="option-item-hotel">
+                  <input class="option-hotel-choice" type="radio" name="housing-type" id="hotel" value="Гостиница" checked>Гостиница
+                </label>
+                <label class="option-item-motel">
+                  <input class="option-motel-choice" type="radio" name="housing-type" id="motel" value="Мотель">Мотель
+                </label>
+                <label class="option-item-apartment">
+                  <input class="option-apartment-choice" type="radio" name="housing-type" id="apartment" value="Апартаменты">Апартаменты
+                </label>
+            </div>
+            <div class="filter-price"></div>
+              <h2 class="filters-item">Стоимость, ₽:</h2>
+                <label class="field-word">
+                  <input class="price-field" type="number" name="from" id="from" value="0">
+                  от
+                </label>
+                <label class="field-word">
+                  <input class="price-field" type="number" name="to" id="to" value="9000">
+                  до
+                </label>
+                <div class="scale">
+                  <div class="big-scale">
+                    <div class="small-scale">
+                      <div class="cube-left"></div>
+                      <div class="cube-right"></div>
+                    </div>
                   </div>
                 </div>
-              </div>
+            </div>
+            <div class="filters-buttons">
               <button class="button-apply" type="submit">Применить</button>
               <button class="button-reset" type="reset">Сбросить</button>
+            </div>
           </form>
         </div>
       </section>
@@ -127,6 +141,37 @@
             </a>
           </div>
         </div>
+        <div class="cards">
+          <ul class="cards-list">
+            <li class="cards-item">
+              <div class="card-body">
+                <img class="card-image" src="" alt="">
+                <b class="card-text">Amara Resort & Spa</b>
+                <div class="card-cost">
+                  <span class="text-plag">Гостиница</span>
+                  <span class="hotel-price">От 4000 ₽</span>
+                </div>
+                <div class="card-buttons">
+                  <a class="button card-button-detail" href="#">Подробнее</a>
+                  <button class="button-favourites">В ИЗБРАННОЕ</button>
+                </div>
+                <div class="card-reviews">
+                  <div class="card-reviews-stars">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                  </div>
+                  <span class="card-rating">Рейтинг: 8,5</span>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+
 
 
       </section>
