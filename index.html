@@ -8,7 +8,7 @@
     <header class="page-header">
       <div class="logo">
         <a href="index.html">
-          <img class="logo-Sedona" alt="Логотип Седоны" src="">
+          <img class="logo-Sedona" alt="Логотип Седоны" src="/images/header/header-logo.svg" width="138" height="64">
         </a>
       </div>
       <nav class="navigation">
@@ -17,7 +17,7 @@
             <a class="navigation-link-current" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="about-sedona.html">О Седоне</a>
+            <a class="navigation-link" href="#sedona-heading">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="hotels.html">Гостиницы</a>
@@ -26,13 +26,20 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span></a>
+              <span class="visually-hidden">Поиск</span>
+              <img class="search-icon" alt="" src="/images/header/header-search.svg" width="18" height="18">
+            </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
+              <img class="favourites-icon" alt="" src="/images/header/header-favourites.svg" width="18" height="18">
             </a>
-            <div class="circle-numbers"></div> <!--Здесь будет кружок с цифрами у избранного. Пока нет мыслей, как его разметить.-->
+            <div class="circle-numbers">
+              <a class="circle-numbers-link">
+                <span class="circle-numbers-core">12</span>
+              </a>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
@@ -46,18 +53,18 @@
       <section class="sedona-promo">
         <div class="sedona-demonstration">
           <div class="sedona-view">
-            <img class="sedona-landscape" src="" alt="Пейзаж Седоны">
+            <img class="sedona-landscape" src="images/index/main-index/preview/index-background.jpg" alt="Пейзаж Седоны" width="1200" height="485">
           </div>
           <div class="sedona-text">
-            <img class="sedona-welcome" src="" alt="">
+            <img class="sedona-welcome" src="images/index/main-index/preview/welcome.svg" alt="" width="458" height="352">
             <h1 class="visually-hidden">Добро пожаловать в великолепную Седону.</h1>
           </div>
           <div class="sedona-view-bottom">
-            <img class="sedona-landscape-bottom" src="">
+            <img class="sedona-landscape-bottom" src="images/index/main-index/preview/divider.svg" width="1200" height="57">
           </div>
         </div>
         <div class="sedona-town">
-          <h2 class="sedona-town-heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <h2 class="sedona-town-heading" id="sedona-heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="sedona-town-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
       </section>
@@ -65,12 +72,12 @@
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <ul class="sedona-advantages-list">
           <li class="sedona-advantages-item">
-            <h3 class="true-town">Настоящий городок</h3>
+            <h3 class="true-town" id="true-town">Настоящий городок</h3>
             <!--Где то здесь должна быть разделительная линия-->
             <p class="true-town-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </li>
           <li class="sedona-advantages-picture">
-            <img class="true-town-picture" src="" alt="Фото городка Седона">
+            <img class="true-town-picture" src="images/index/main-index/sedona-town.jpg" alt="Фото городка Седона" width="800" height="384">
           </li>
           <li class="sedona-advantages-item">
             <h3 class="small-square">Небольшая площадь</h3>
@@ -88,7 +95,7 @@
             <p class="few-tourists-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="sedona-advantages-picture">
-            <img class="canyon-picture" src="" alt="Фото каньона">
+            <img class="canyon-picture" src="images/index/main-index/canyon.jpg" alt="Фото каньона" width="800" height="384">
           </li>
           <li class="sedona-advantages-item">
             <h3 class="few-tourists">Там есть мост дьявола</h3>
@@ -101,17 +108,17 @@
         <h2 class="visually-hidden">Сервис в Седоне</h2>
         <ul class="sedona-services-list">
           <li class="sedona-services-item">
-            <img class="house-picture" src="" alt="Картинка домика">
+            <img class="house-picture" src="images/index/main-index/icons/house.svg" alt="Картинка домика" width="75" height="72">
             <h3 class="house-service">Жильё</h3>
             <p class="house-service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="sedona-services-item">
-            <img class="food-picture" src="" alt="Картинка еды">
+            <img class="food-picture" src="images/index/main-index/icons/food.svg" alt="Картинка еды" width="75" height="72">
             <h3 class="food-service">Еда</h3>
             <p class="food-service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="sedona-services-item">
-            <img class="souvenir-picture" src="" alt="Картинка сувенира">
+            <img class="souvenir-picture" src="images/index/main-index/icons/gift.svg" alt="Картинка сувенира" width="75" height="72">
             <h3 class="souvenir-service">Сувениры</h3>
             <p class="souvenir-service-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
@@ -124,7 +131,7 @@
       </section>
       <section class="subscription">
         <div class="subscription-background">
-          <img class="subscription-image" src="" alt="">
+          <img class="subscription-image" src="images/index/main-index/Subscribe-background.jpg" alt="" width="1200" height="414.86">
         </div>
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p class="subscription-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -139,19 +146,19 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="VK" href="https://vk.com/htmlacademy">
-              <img class="VK-imagine" src="" alt="Иконка ВКонтакте">
+              <img class="VK-imagine" src="images/index/main-index/icons/VK.svg" alt="Иконка ВКонтакте" width="24" height="14">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="Telegram" href="https://t.me/htmlacademy">
-              <img class="Telegram-imagine" src="" alt="Иконка Телеграм">
+              <img class="Telegram-imagine" src="images/index/main-index/icons/telegram.svg" alt="Иконка Телеграм" width="18" height="15.1">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="YouTube" href="https://vk.com/htmlacademy">
-              <img class="YouTube-imagine" src="" alt="Иконка YouTube">
+              <img class="YouTube-imagine" src="images/index/main-index/icons/youtube.svg" alt="Иконка YouTube" width="22" height="17">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
@@ -165,9 +172,79 @@
       </section>
       <section class="footer-htmlacademy">
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <img class="htmlacademy-logo" src="" alt="Логотип HTML academy">
+          <img class="htmlacademy-logo" src="images/index/main-index/icons/HTML Academy.svg" alt="Логотип HTML academy" width="114.9" height="32.9">
         </a>
       </section>
     </footer>
+
+    <div class="modal">
+      <div class="modal-blur">
+        <div class="modal-content">
+          <div class="modal-content-header">
+            <h1 class="modal-content-title">Поиск гостиницы в Седоне</h1>
+            <button class="modal-content-closebutton">
+              <span class="closebutton">
+                <span class="closebutton-x"></span>
+              </span>
+            </button>
+          </div>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-content-parameters">
+              <ul class="modal-content-parameters-list">
+                <li class="modal-content-parameters-item">
+                  <label class="modal-content-parameters-option" for="datefield-entry">Дата заезда:</label>
+                  <input class="modal-content-parameters-field" id="datefield-entry" type="text" value="27 апреля 2020">
+                  <span class="field-decorative-calendar">
+                    <img class="calendar-image" src="/images/index/modal/calendar.svg" alt="" width="16" height="15">
+                  </span>
+                  <span class="field-data-error">Мы не можем отправить вас в прошлое.</span>
+                </li>
+                <li class="modal-content-parameters-item">
+                  <label class="modal-content-parameters-option" for="datefield-exit">Дата выезда:</label>
+                  <input class="modal-content-parameters-field" id="datefield-exit" type="text" value="1 сентября 2023">
+                  <span class="field-decorative-calendar">
+                    <img class="calendar-image" src="/images/index/modal/calendar.svg" alt="" width="16" height="15">
+                  </span>
+                  <span class="field-data-error">На эти даты есть свободные номера. Пока есть.</span>
+                </li>
+                <li class="modal-content-parameters-item">
+                  <label class="modal-content-parameters-option" for="number-adults">Взрослые:</label>
+                  <div class="quantity-field">
+                    <button class="decrease-button">
+                      <span class="decrease-button-sign">-</span>
+                    </button>
+                    <input class="modal-content-parameters-field" id="number-adults" type="number" value="2">
+                    <button class="increase-button">
+                      <span class="increase-button-sign">+</span>
+                    </button>
+                  </div>
+                </li>
+                <li class="modal-content-parameters-item">
+                  <label class="modal-content-parameters-option" for="number-children">Дети:</label>
+                  <span class="children-help">
+                    <span class="children-help-i">i</span>
+                  </span>
+                  <span class="children-help-hovered">
+                    <span class="children-help-hovered-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                  <div class="quantity-field">
+                    <button class="decrease-button">
+                      <span class="decrease-button-sign">-</span>
+                    </button>
+                    <input class="modal-content-parameters-field" id="number-children" type="number" value="2">
+                    <button class="increase-button">
+                      <span class="increase-button-sign">+</span>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+              <button class="searching-button" type="submit">
+                <span class="searching-button-text">Найти</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
