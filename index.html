@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -14,7 +15,7 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link-current" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#sedona-heading">О Седоне</a>
@@ -43,7 +44,7 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Хочу сюда!</span>
+              <span class="button header-button">Хочу сюда!</span>
             </a>
           </li>
         </ul>
@@ -52,16 +53,11 @@
     <main class="main-index">
       <section class="sedona-promo">
         <div class="sedona-demonstration">
-          <div class="sedona-view">
-            <img class="sedona-landscape" src="images/index/main-index/preview/index-background.jpg" alt="Пейзаж Седоны" width="1200" height="485">
-          </div>
           <div class="sedona-text">
             <img class="sedona-welcome" src="images/index/main-index/preview/welcome.svg" alt="" width="458" height="352">
             <h1 class="visually-hidden">Добро пожаловать в великолепную Седону.</h1>
           </div>
-          <div class="sedona-view-bottom">
-            <img class="sedona-landscape-bottom" src="images/index/main-index/preview/divider.svg" width="1200" height="57">
-          </div>
+          <div class="sedona-view-bottom"></div>
         </div>
         <div class="sedona-town">
           <h2 class="sedona-town-heading" id="sedona-heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -71,56 +67,56 @@
       <section class="sedona-advantages">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <ul class="sedona-advantages-list">
-          <li class="sedona-advantages-item">
-            <h3 class="true-town" id="true-town">Настоящий городок</h3>
+          <li class="sedona-advantages-item-blue">
+            <h3 class="sedona-advantages-item-title" id="true-town">Настоящий городок</h3>
             <!--Где то здесь должна быть разделительная линия-->
-            <p class="true-town-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <p class="sedona-advantages-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </li>
           <li class="sedona-advantages-picture">
             <img class="true-town-picture" src="images/index/main-index/sedona-town.jpg" alt="Фото городка Седона" width="800" height="384">
           </li>
-          <li class="sedona-advantages-item">
-            <h3 class="small-square">Небольшая площадь</h3>
+          <li class="sedona-advantages-item-white">
+            <h3 class="sedona-advantages-item-title">Небольшая площадь</h3>
             <!--Где то здесь должна быть разделительная линия-->
-            <p class="small-square-description">Все достопримечательности находятся очень близко</p>
+            <p class="sedona-advantages-item-description">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="sedona-advantages-item">
-            <h3 class="beautiful-road">Красивая дорога</h3>
+          <li class="sedona-advantages-item-grey">
+            <h3 class="sedona-advantages-item-title">Красивая дорога</h3>
             <!--Где то здесь должна быть разделительная линия-->
-            <p class="beautiful-road-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="sedona-advantages-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="sedona-advantages-item">
-            <h3 class="few-tourists">Мало туристов</h3>
+          <li class="sedona-advantages-item-white">
+            <h3 class="sedona-advantages-item-title">Мало туристов</h3>
             <!--Где то здесь должна быть разделительная линия-->
-            <p class="few-tourists-description">Большинство едет в Гранд Каньон и толпится там</p>
+            <p class="sedona-advantages-item-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="sedona-advantages-picture">
             <img class="canyon-picture" src="images/index/main-index/canyon.jpg" alt="Фото каньона" width="800" height="384">
           </li>
-          <li class="sedona-advantages-item">
-            <h3 class="few-tourists">Там есть мост дьявола</h3>
+          <li class="sedona-advantages-item-blue">
+            <h3 class="sedona-advantages-item-title">Там есть мост дьявола</h3>
             <!--Где то здесь должна быть разделительная линия-->
-            <p class="few-tourists-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <p class="sedona-advantages-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
         </ul>
       </section>
       <section class="sedona-services">
         <h2 class="visually-hidden">Сервис в Седоне</h2>
         <ul class="sedona-services-list">
-          <li class="sedona-services-item">
+          <li class="sedona-services-item-grey">
             <img class="house-picture" src="images/index/main-index/icons/house.svg" alt="Картинка домика" width="75" height="72">
-            <h3 class="house-service">Жильё</h3>
-            <p class="house-service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <h3 class="service-type">Жильё</h3>
+            <p class="service-type-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class="sedona-services-item">
+          <li class="sedona-services-item-white">
             <img class="food-picture" src="images/index/main-index/icons/food.svg" alt="Картинка еды" width="75" height="72">
-            <h3 class="food-service">Еда</h3>
-            <p class="food-service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            <h3 class="service-type">Еда</h3>
+            <p class="service-type-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="sedona-services-item">
+          <li class="sedona-services-item-grey">
             <img class="souvenir-picture" src="images/index/main-index/icons/gift.svg" alt="Картинка сувенира" width="75" height="72">
-            <h3 class="souvenir-service">Сувениры</h3>
-            <p class="souvenir-service-description">Не только китайского, но и настоящего местного производства!</p>
+            <h3 class="service-type">Сувениры</h3>
+            <p class="sservice-type-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
@@ -130,9 +126,7 @@
         <a class="button button-searching-hotels" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
       <section class="subscription">
-        <div class="subscription-background">
-          <img class="subscription-image" src="images/index/main-index/Subscribe-background.jpg" alt="" width="1200" height="414.86">
-        </div>
+        <div class="subscription-background"></div>
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p class="subscription-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
