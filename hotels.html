@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="hotels-header">
@@ -20,7 +21,7 @@
             <a class="navigation-link" href="about-sedona.html">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-current" href="hotels.html">Гостиницы</a>
+            <a class="navigation-link navigation-link-current" href="hotels.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -51,7 +52,6 @@
     </header>
     <main class="main-hotels">
       <div class="main-hotels-container">
-        <img class="main-hotels-cintainer-background" alt="" src="/images/catalog/main-catalog/fliters-background.jpg" width="1200" height="412">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <div class="bread-crumbs">
@@ -76,17 +76,17 @@
                 <h2 class="filters-item">Инфраструктура:</h2>
                   <ul class="option-list">
                     <li class="option-item">
-                      <label class="option-item-pool">
-                        <input class="option-pool-choice" type="checkbox" name="pool" id="pool" checked>Бассейн
+                      <label class="option-item-choice">
+                        <input class="pool-choice" type="checkbox" name="pool" id="pool" checked>Бассейн
                       </label>
                     </li>
                     <li class="option-item">
-                      <label class="option-item-parking">
+                      <label class="option-item-choice">
                         <input class="option-parking-choice" type="checkbox" name="parking" id="parking" checked>Парковка
                       </label>
                     </li>
                     <li class="option-item">
-                      <label class="option-item-wifi">
+                      <label class="option-item-choice">
                         <input class="option-wifi-choice" type="checkbox" name="wifi" id="wifi">Wi-Fi
                       </label>
                     </li>
@@ -96,17 +96,17 @@
                 <h2 class="filters-item">Тип Жилья:</h2>
                   <ul class="radiobutton-list">
                     <li class="radiobutton-item">
-                      <label class="option-item-hotel">
+                      <label class="radiobutton-item-option">
                         <input class="option-hotel-choice" type="radio" name="housing-type" id="hotel" value="Гостиница" checked>Гостиница
                       </label>
                     </li>
                     <li class="radiobutton-item">
-                      <label class="option-item-motel">
+                      <label class="radiobutton-item-option">
                         <input class="option-motel-choice" type="radio" name="housing-type" id="motel" value="Мотель">Мотель
                       </label>
                     </li>
                     <li class="radiobutton-item">
-                      <label class="option-item-apartment">
+                      <label class="radiobutton-item-option">
                         <input class="option-apartment-choice" type="radio" name="housing-type" id="apartment" value="Апартаменты">Апартаменты
                       </label>
                     </li>
@@ -292,43 +292,43 @@
         <div class="searching-pagination">
           <ul class="pagination-button-list">
             <li class="pagination-button-item">
-              <a class="pagination-button-current" href="">
-                <span class="pagination-button-numbers">1</span>
+              <a class="pagination-button pagination-button-current" href="">
+                <span class="pagination-numbers pagination-numbers-current">1</span>
               </a>
             </li>
             <li class="pagination-button-item">
               <a class="pagination-button" href="#">
-                <span class="pagination-button-numbers">2</span>
+                <span class="pagination-numbers">2</span>
               </a>
             </li>
             <li class="pagination-button-item">
               <a class="pagination-button" href="#">
-                <span class="pagination-button-numbers">3</span>
+                <span class="pagination-numbers">3</span>
               </a>
             </li>
             <li class="pagination-button-item">
               <a class="pagination-button" href="#">
-                <span class="pagination-button-numbers">4</span>
+                <span class="pagination-numbers">4</span>
               </a>
             </li>
             <li class="pagination-button-item">
               <a class="pagination-button-ellipsis" href="#">
-                <span class="pagination-button-numbers">...</span>
+                <span class="pagination-numbers pagination-numbers-ellipsis">...</span>
               </a>
             </li>
             <li class="pagination-button-item">
               <a class="pagination-button" href="#">
-                <span class="pagination-button-numbers">10</span>
+                <span class="pagination-numbers">10</span>
               </a>
             </li>
           </ul>
         </div>
       </section>
       <section class="subscription-inner">
-        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-        <p class="subscription-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="subscription-title subscription-title-catalog">Подпишитесь на рассылку</h2>
+        <p class="subscription-subtitle subscription-subtitle-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail">
+          <input class="field-catalog" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail">
           <button class="subscription-button" type="submit">ПОДПИСАТЬСЯ</button>
         </form>
       </section>
