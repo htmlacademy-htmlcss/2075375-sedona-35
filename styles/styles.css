@@ -85,7 +85,7 @@ body {
   color: #ffffff;
   background-color: #7DB54F;
   width: 20px;
-  height: 20px;
+  min-height: 20px;
 }
 
 .header-button {
@@ -100,7 +100,8 @@ body {
   color: #ffffff;
   background-color: #756157;
   width: 160px;
-  height: 36px;
+  padding: 0 17px;
+  min-height: 36px;
 }
 
 .page-container {
@@ -114,32 +115,50 @@ body {
 }
 
 .sedona-demonstration {
+  display: flex;
+  flex-direction: column;
   background-image: url("/images/index/main-index/preview/index-background.jpg");
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 
-.sedona-welcome {
-  display: block;
+.sedona-text {
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   padding-top: 51px;
-  padding-bottom: 82px;
+  padding-bottom: 25px;
+}
+
+.sedona-welcome {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.divider {
+  display: flex;
 }
 
 .sedona-town {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   text-align: center;
+  min-height: 282px;
+  padding-top: 69px;
+  padding-bottom: 90px;
 }
 
 .sedona-town-heading {
   line-height: 36px;
   font-weight: 700;
   font-size: 30px;
-  margin: 69px 290px 25px;
+  margin: 0 auto 25px;
   padding: 0;
   width: 621px;
+  min-height: 72px;
   text-transform: uppercase;
 }
 
@@ -147,8 +166,9 @@ body {
   line-height: 26px;
   font-weight: 400;
   font-size: 22px;
-  margin: 0 274px 90px 275px;
+  margin: 0 274px 0 275px;
   padding: 0;
+  min-height: 26px;
   width: 651px;
 }
 
@@ -159,95 +179,111 @@ body {
   margin: 0;
 }
 
+.sedona-advantages-picture {
+  display: flex;
+}
+
 .sedona-advantages-item-blue {
+  box-sizing: border-box;
+  padding: 92px 85px 111px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #82B3D3;
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   text-align: center;
 }
 
 .sedona-advantages-item-white {
+  box-sizing: border-box;
+  padding: 103px 85px 121px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   text-align: center;
 }
 
 .sedona-advantages-item-grey {
+  box-sizing: border-box;
+  padding: 103px 85px 121px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgba(131, 179, 211, 0.2);
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   text-align: center;
 }
 
 .sedona-advantages-item-title {
+  box-sizing: border-box;
   line-height: 28px;
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
   width: 175px;
-  height: 56px;
-  margin: 92px 112.5px 62px;
+  min-height: 56px;
+  margin: 0 27.5px 30px;
 }
 
 .sedona-advantages-item-title-white {
+  box-sizing: border-box;
   line-height: 28px;
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
   width: 175px;
-  height: 56px;
-  margin: 92px 112.5px 62px;
+  min-height: 56px;
+  margin: 0 27.5px 30px;
 }
 
 .sedona-advantages-item-title-grey {
+  box-sizing: border-box;
   line-height: 28px;
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
   width: 175px;
-  height: 56px;
-  margin: 92px 112.5px 62px;
+  min-height: 56px;
+  margin: 0 27.5px 30px;
 }
 
 
 .sedona-advantages-item-description {
+  box-sizing: border-box;
   font-weight: 400;
   color: #ffffff;
   width: 230px;
-  height: 63px;
-  margin: 0 85px 111px;
+  min-height: 63px;
+  margin: 30px 0 0;
 }
 
 .sedona-advantages-item-description-white {
+  box-sizing: border-box;
   font-weight: 400;
   color: #333333;
   width: 230px;
-  height: 63px;
-  margin: 0 85px 111px;
+  min-height: 63px;
+  margin: 30px 0 0;
 }
 
 .sedona-advantages-item-description-grey {
+  box-sizing: border-box;
   font-weight: 400;
   color: #333333;
   width: 230px;
-  height: 63px;
-  margin: 0 85px 111px;
+  min-height: 63px;
+  margin: 30px 0 0;
 }
 
 .sedona-services-list {
@@ -258,37 +294,41 @@ body {
 }
 
 .sedona-services-item-grey {
+  box-sizing: border-box;
+  padding: 80px 85px 81px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgba(131, 179, 211, 0.2);
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   text-align: center;
 }
 
 .sedona-services-item-white {
+  box-sizing: border-box;
+  padding: 80px 85px 81px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   text-align: center;
 }
 
 .house-picture {
-  margin: 80px 162.5px 30px;
+  margin: 0 77.5px 30px;
 }
 
 .food-picture {
-  margin: 80px 162.5px 30px;
+  margin: 0 77.5px 30px;
 }
 
 .souvenir-picture {
-  margin: 80px 162.5px 30px;
+  margin: 0 77.5px 30px;
 }
 
 .service-type {
@@ -296,17 +336,20 @@ body {
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0 85px 30px;
+  width: 100%;
+  margin: 0 0 30px;
 }
 
 .service-type-description {
   font-weight: 400;
-  margin: 0 85px 81px;
-  width: 230px;
-  height: 63px;
+  margin: 0;
+  width: 100%;
+  min-height: 63px;
 }
 
 .searching-hotels {
+  box-sizing: border-box;
+  padding: 96px 304px;
   display: flex;
   flex-direction: column;
   width: 1200px;
@@ -316,7 +359,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 592px;
-  margin: 96px 304px;
 }
 
 .searching-hotels-title {
@@ -350,11 +392,13 @@ body {
   color: #ffffff;
   background-color: #756157;
   width: 375px;
-  height: 52px;
+  min-height: 52px;
   margin: 0 108.5px;
 }
 
 .subscription-background {
+  box-sizing: border-box;
+  padding: 96px 258px 104px;
   display: flex;
   justify-content: center;
   background-image: url("/images/index/main-index/Subscribe-background.jpg");
@@ -366,7 +410,8 @@ body {
 
 .subscription-container {
   text-align: center;
-  margin: 96px 258px 104px;
+  width: 684px;
+  margin: 0;
 }
 
 .subscription-title {
@@ -375,7 +420,7 @@ body {
   font-size: 30px;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 0 140px 20px;
+  margin: 0 auto 20px;
 }
 
 .subscription-subtitle {
@@ -383,14 +428,12 @@ body {
   font-weight: 400;
   font-size: 22px;
   color: #ffffff;
-  margin: 0 104.5px 54px;
+  margin: 0 auto 54px;
 }
 
 .form-container {
   display: flex;
   width: 684px;
-  height: 52px;
-  margin: 0 258px 104px;
 }
 
 .field {
@@ -400,16 +443,14 @@ body {
   font-size: 18px;
   margin:0;
   padding-left: 20px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-right: 20px;
   color:#000000;
   width: 452px;
+  min-height: 52px;
 }
 
 .subscription-button-container {
   display: flex;
-  width: 132px;
-  height: 36px;
   margin: 8px 50px;
 }
 
@@ -424,19 +465,22 @@ body {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
+  text-align: center;
+  border: none;
 }
 
 .footer-index {
+  box-sizing: border-box;
+  padding: 40px 70px 30px;
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 1200px;
 }
 
 .footer-social-container {
   display: flex;
   width: 1060px;
-  height: 50px;
-  margin: 40px 70px 30px;
+  min-height: 50px;
 }
 
 .footer-social-list {
@@ -445,10 +489,10 @@ body {
   padding: 0;
   margin: 0;
   width: 183.5px;
-  height: 50px;
+  min-height: 50px;
 }
 
-.footer-social-item { /*Не могу нормально выровнить значок ютуба*/
+.footer-social-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -457,6 +501,10 @@ body {
   margin: 0;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.YouTube-image {
+  display: flex;
 }
 
 .footer-social-item:last-child {
