@@ -32,7 +32,14 @@ body {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  margin: -1px;
 }
 
 .main-container {
@@ -42,39 +49,75 @@ body {
 .page-header {
   display: flex;
   justify-content: center;
+  min-height: 64px;
 }
 
 .navigation {
   display: flex;
   padding: 0;
-  width: 654px;
 }
 
-.logo {
-  margin-right: 28px;
+.navigation-container {
+  display: flex;
+  width: 1060px;
+  margin: auto;
+}
+
+.logo-sedona-link {
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-right: 30px;
 }
 
 .navigation-list, .navigation-user {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .navigation-list {
-  width: 339px;
-  margin-right: 285px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 464px;
+  margin-right: 160px;
 }
 
 .navigation-user {
+  display: flex;
   width: 268px;
 }
 
+.navigation-item {
+  padding: 20px 16px;
+}
+
 .navigation-link {
+  display: block;
   line-height: 24px;
   font-weight: 700;
   font-size: 20px;
   color: #000000;
-  text-align: center;
   text-decoration: none;
+}
+
+.user-navigation-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-width: 44px;
+  min-height: 64px;
+}
+
+.user-navigation-item-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14px;
+  margin-right: 0;
+  margin-bottom: 14px;
+  margin-left: 20px;
 }
 
 .circle-numbers-core {
@@ -99,7 +142,7 @@ body {
   text-decoration: none;
   color: #ffffff;
   background-color: #756157;
-  width: 160px;
+  width: 126px;
   padding: 0 17px;
   min-height: 36px;
 }
@@ -139,6 +182,7 @@ body {
 
 .divider {
   display: flex;
+  width: 100%;
 }
 
 .sedona-town {
