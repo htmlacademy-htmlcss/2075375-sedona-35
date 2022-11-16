@@ -63,6 +63,7 @@ body {
 
 .navigation-container {
   display: flex;
+  align-items: flex-start;
   width: 1060px;
   margin: auto;
 }
@@ -449,7 +450,7 @@ body {
   padding: 96px 258px 104px;
   display: flex;
   justify-content: center;
-  background-image: url("/images/index/main-index/Subscribe-background.jpg");
+  background-image: url("/images/index/main-index/subscribe-background.jpg");
   width: 1200px;
   height: 414.86px;
   background-repeat: no-repeat;
@@ -533,7 +534,7 @@ body {
 
 .footer-social-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 0;
   margin: 0;
   width: 183.5px;
@@ -544,6 +545,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   width: 47.33px;
   height: 40px;
   margin: 0;
@@ -553,10 +555,6 @@ body {
 
 .YouTube-image {
   display: flex;
-}
-
-.footer-social-item:last-child {
-  margin-right: 41.5px;
 }
 
 .footer-telephone {
@@ -578,6 +576,10 @@ body {
 .footer-htmlacademy {
   width: 156.5px;
   height: 50px;
+}
+
+.htmlacademy-link {
+  display: flex;
 }
 
 .htmlacademy-logo {
