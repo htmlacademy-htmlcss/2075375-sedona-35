@@ -42,6 +42,10 @@ body {
   margin: -1px;
 }
 
+.modal {
+  display: none;
+}
+
 .main-container {
   flex-grow: 1;
 }
@@ -64,7 +68,7 @@ body {
 }
 
 .logo-sedona-link {
-  display: block;
+  display: flex;
   padding: 0;
   margin: 0;
   margin-right: 30px;
