@@ -98,12 +98,18 @@ body {
 }
 
 .navigation-link {
-  display: block;
+  position: relative;
+  display: flex;
   line-height: 24px;
   font-weight: 700;
   font-size: 20px;
   color: #000000;
   text-decoration: none;
+}
+
+.navigation-link:focus {
+  border: 2px solid red;
+  outline: none;
 }
 
 .user-navigation-item {
@@ -126,14 +132,23 @@ body {
 }
 
 .circle-numbers-core {
+  position: absolute;
+  top: -11px;
+  right: -10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   line-height: 10px;
   font-weight: 400;
   font-size: 10px;
   text-align: center;
   color: #ffffff;
   background-color: #7DB54F;
-  width: 20px;
+  min-width: 20px;
   min-height: 20px;
+  border-radius: 10px;
+  padding: 0 2px 0 2px;
 }
 
 .header-button {
@@ -150,6 +165,16 @@ body {
   width: 126px;
   padding: 0 17px;
   min-height: 36px;
+  border-radius: 4px;
+}
+
+.header-button:hover, .header-button:focus {
+  background-color: #615048;
+}
+
+.header-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
 }
 
 .page-container {
@@ -166,7 +191,7 @@ body {
   display: flex;
   flex-direction: column;
   background-image: url("/images/index/main-index/preview/index-background.jpg");
-  background-color: #ffffff;
+  background-color: #000000;
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -186,8 +211,9 @@ body {
 }
 
 .divider {
-  display: flex;
   width: 100%;
+  height: 57px;
+  background-image: url("/images/index/main-index/preview/divider.svg");
 }
 
 .sedona-town {
@@ -443,6 +469,16 @@ body {
   width: 375px;
   min-height: 52px;
   margin: 0 108.5px;
+  border-radius: 4px;
+}
+
+.button-searching-hotels:hover, .button-searching-hotels:focus {
+  background-color: #615048;
+}
+
+.button-searching-hotels:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .subscription-background {
@@ -455,6 +491,7 @@ body {
   height: 414.86px;
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-color: #000000;
 }
 
 .subscription-container {
@@ -496,6 +533,8 @@ body {
   color:#000000;
   width: 452px;
   min-height: 52px;
+  border: none;
+  border-radius: 4px 0 0 4px;
 }
 
 .subscription-button-container {
@@ -516,6 +555,17 @@ body {
   text-transform: uppercase;
   text-align: center;
   border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.subscription-button:hover, .subscription-button:focus {
+  background-color: #68A2CA;
+}
+
+.subscription-button:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-index {
@@ -553,14 +603,77 @@ body {
   margin-bottom: 5px;
 }
 
-.YouTube-image {
+.VK {
   display: flex;
+}
+
+.vk-image {
+  display: flex;
+  fill: #83B3D3;
+}
+
+.VK:hover .vk-image {
+  fill: #68A2CA;
+}
+
+.VK:focus .vk-image {
+  fill: #68A2CA;
+}
+
+.VK:active .vk-image {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.Telegram {
+  display: flex;
+}
+
+.telegram-image {
+  display: flex;
+  fill: #83B3D3;
+}
+
+.Telegram:hover .telegram-image {
+  fill: #68A2CA;
+}
+
+.Telegram:focus .telegram-image {
+  fill: #68A2CA;
+}
+
+.Telegram:active .telegram-image {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.YouTube {
+  display: flex;
+}
+
+.youtube-image {
+  display: flex;
+  fill: #83B3D3;
+}
+
+.YouTube:hover .youtube-image {
+  fill: #68A2CA;
+}
+
+.YouTube:focus .youtube-image {
+  fill: #68A2CA;
+}
+
+.YouTube:active .youtube-image {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-telephone {
   display: flex;
   width: 720px;
   height: 50px;
+}
+
+.footer-contacts-adress {
+  font-style: normal;
 }
 
 .footer-contacts-telephone {
@@ -573,6 +686,14 @@ body {
   margin: 5px 194px 5px 195px;
 }
 
+.footer-contacts-telephone:hover, .footer-contacts-telephone:focus {
+  color: #756157;
+}
+
+.footer-contacts-telephone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .footer-htmlacademy {
   width: 156.5px;
   height: 50px;
@@ -583,7 +704,20 @@ body {
 }
 
 .htmlacademy-logo {
+  fill: #000000;
   margin: 8.5px 0 8.5px 41.5px;
+}
+
+.htmlacademy-link:hover .htmlacademy-logo {
+  fill: #756157;
+}
+
+.htmlacademy-link:focus .htmlacademy-logo {
+  fill: #756157;
+}
+
+.htmlacademy-link:active .htmlacademy-logo {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .main-hotels-container {
