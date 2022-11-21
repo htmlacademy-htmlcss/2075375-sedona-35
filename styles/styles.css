@@ -31,6 +31,18 @@ body {
   width: 100%;
 }
 
+.background-wrap {
+  width: 100%;
+  background-color: #F2F2F2;
+}
+
+.site-body {
+  width: 1200px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -47,6 +59,7 @@ body {
 }
 
 .main-container {
+  margin-top: -6px;
   flex-grow: 1;
 }
 
@@ -63,6 +76,7 @@ body {
 
 .navigation-container {
   display: flex;
+  align-items: flex-start;
   width: 1060px;
   margin: auto;
 }
@@ -72,6 +86,10 @@ body {
   padding: 0;
   margin: 0;
   margin-right: 30px;
+}
+
+.logo-Sedona {
+  position: relative;
 }
 
 .navigation-list, .navigation-user {
@@ -93,11 +111,23 @@ body {
 }
 
 .navigation-item {
+  position: relative;
   padding: 20px 16px;
 }
 
+.navigation-link-current::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  width: 68px;
+  height: 2px;
+  top: 43px;
+  background-color: #756257;
+}
+
 .navigation-link {
-  display: block;
+  position: relative;
+  display: flex;
   line-height: 24px;
   font-weight: 700;
   font-size: 20px;
@@ -125,14 +155,23 @@ body {
 }
 
 .circle-numbers-core {
+  position: absolute;
+  top: -11px;
+  right: -10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   line-height: 10px;
   font-weight: 400;
   font-size: 10px;
   text-align: center;
   color: #ffffff;
   background-color: #7DB54F;
-  width: 20px;
+  min-width: 20px;
   min-height: 20px;
+  border-radius: 10px;
+  padding: 0 2px 0 2px;
 }
 
 .header-button {
@@ -149,6 +188,20 @@ body {
   width: 126px;
   padding: 0 17px;
   min-height: 36px;
+  border-radius: 4px;
+}
+
+.header-button:hover {
+  background-color: #615048;
+}
+
+.header-button:focus-visible {
+  background-color: #615048;
+}
+
+.header-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
 }
 
 .page-container {
@@ -165,7 +218,7 @@ body {
   display: flex;
   flex-direction: column;
   background-image: url("/images/index/main-index/preview/index-background.jpg");
-  background-color: #ffffff;
+  background-color: #000000;
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -185,8 +238,9 @@ body {
 }
 
 .divider {
-  display: flex;
   width: 100%;
+  height: 57px;
+  background-image: url("/images/index/main-index/preview/divider.svg");
 }
 
 .sedona-town {
@@ -232,6 +286,7 @@ body {
 }
 
 .sedona-advantages-item-blue {
+  position: relative;
   box-sizing: border-box;
   padding: 92px 85px 111px;
   display: flex;
@@ -245,6 +300,7 @@ body {
 }
 
 .sedona-advantages-item-white {
+  position: relative;
   box-sizing: border-box;
   padding: 103px 85px 121px;
   display: flex;
@@ -258,6 +314,7 @@ body {
 }
 
 .sedona-advantages-item-grey {
+  position: relative;
   box-sizing: border-box;
   padding: 103px 85px 121px;
   display: flex;
@@ -316,6 +373,16 @@ body {
   margin: 30px 0 0;
 }
 
+.sedona-advantages-item-description::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  top: 178px;
+  left: 170px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .sedona-advantages-item-description-white {
   box-sizing: border-box;
   font-weight: 400;
@@ -325,6 +392,16 @@ body {
   margin: 30px 0 0;
 }
 
+.sedona-advantages-item-description-white::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  top: 189px;
+  left: 170px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .sedona-advantages-item-description-grey {
   box-sizing: border-box;
   font-weight: 400;
@@ -332,6 +409,16 @@ body {
   width: 230px;
   min-height: 63px;
   margin: 30px 0 0;
+}
+
+.sedona-advantages-item-description-grey::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  top: 189px;
+  left: 170px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .sedona-services-list {
@@ -442,6 +529,20 @@ body {
   width: 375px;
   min-height: 52px;
   margin: 0 108.5px;
+  border-radius: 4px;
+}
+
+.button-searching-hotels:hover {
+  background-color: #615048;
+}
+
+.button-searching-hotels:focus-visible {
+  background-color: #615048;
+}
+
+.button-searching-hotels:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .subscription-background {
@@ -449,11 +550,12 @@ body {
   padding: 96px 258px 104px;
   display: flex;
   justify-content: center;
-  background-image: url("/images/index/main-index/Subscribe-background.jpg");
+  background-image: url("/images/index/main-index/subscribe-background.jpg");
   width: 1200px;
   height: 414.86px;
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-color: #000000;
 }
 
 .subscription-container {
@@ -495,6 +597,8 @@ body {
   color:#000000;
   width: 452px;
   min-height: 52px;
+  border: none;
+  border-radius: 4px 0 0 4px;
 }
 
 .subscription-button-container {
@@ -515,6 +619,21 @@ body {
   text-transform: uppercase;
   text-align: center;
   border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.subscription-button:hover {
+  background-color: #68A2CA;
+}
+
+.subscription-button:focus-visible {
+  background-color: #68A2CA;
+}
+
+.subscription-button:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-index {
@@ -533,7 +652,7 @@ body {
 
 .footer-social-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 0;
   margin: 0;
   width: 183.5px;
@@ -544,6 +663,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   width: 47.33px;
   height: 40px;
   margin: 0;
@@ -551,18 +671,77 @@ body {
   margin-bottom: 5px;
 }
 
-.YouTube-image {
+.VK {
   display: flex;
 }
 
-.footer-social-item:last-child {
-  margin-right: 41.5px;
+.vk-image {
+  display: flex;
+  fill: #83B3D3;
+}
+
+.VK:hover .vk-image {
+  fill: #68A2CA;
+}
+
+.VK:focus-visible .vk-image {
+  fill: #68A2CA;
+}
+
+.VK:active .vk-image {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.Telegram {
+  display: flex;
+}
+
+.telegram-image {
+  display: flex;
+  fill: #83B3D3;
+}
+
+.Telegram:hover .telegram-image {
+  fill: #68A2CA;
+}
+
+.Telegram:focus-visible .telegram-image {
+  fill: #68A2CA;
+}
+
+.Telegram:active .telegram-image {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.YouTube {
+  display: flex;
+}
+
+.youtube-image {
+  display: flex;
+  fill: #83B3D3;
+}
+
+.YouTube:hover .youtube-image {
+  fill: #68A2CA;
+}
+
+.YouTube:focus-visible .youtube-image {
+  fill: #68A2CA;
+}
+
+.YouTube:active .youtube-image {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-telephone {
   display: flex;
   width: 720px;
   height: 50px;
+}
+
+.footer-contacts-adress {
+  font-style: normal;
 }
 
 .footer-contacts-telephone {
@@ -575,13 +754,42 @@ body {
   margin: 5px 194px 5px 195px;
 }
 
+.footer-contacts-telephone:hover {
+  color: #756157;
+}
+
+.footer-contacts-telephone:focus-visible {
+  color: #756157;
+}
+
+.footer-contacts-telephone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .footer-htmlacademy {
   width: 156.5px;
   height: 50px;
 }
 
+.htmlacademy-link {
+  display: flex;
+}
+
 .htmlacademy-logo {
+  fill: #000000;
   margin: 8.5px 0 8.5px 41.5px;
+}
+
+.htmlacademy-link:hover .htmlacademy-logo {
+  fill: #756157;
+}
+
+.htmlacademy-link:focus-visible .htmlacademy-logo {
+  fill: #756157;
+}
+
+.htmlacademy-link:active .htmlacademy-logo {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .main-hotels-container {
